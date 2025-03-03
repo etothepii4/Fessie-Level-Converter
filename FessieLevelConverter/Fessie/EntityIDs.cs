@@ -1,0 +1,38 @@
+﻿namespace FessieLevelConverter.Fessie;
+
+public enum EntityIDs
+{
+    Fessie = 0,
+    TrashMonster = 1,
+    Jellyfish = 2,
+    Star = 3,
+    TrashContainerBrownChangingColor = 4,
+    Bomb = 5,
+    PowerupShield = 6,
+    PowerupFire = 7,
+    TrashBattery = 8,
+    TrashPaint = 9,
+    TrashCream = 10,
+    TrashToxicBarrel = 11,
+    TrashFishGrate = 12,
+    TrashApple = 13,
+    TrashBananaPeel = 14,
+    TrashSmallBlackSquareUnused = 15,
+    TrashShoe = 16,
+    TrashLightbulb = 17,
+    TrashPlant = 18,
+    TrashPen = 19,
+    TrashCarton = 20,
+    TrashMilk = 21,
+    TrashPaper = 22,
+    TrashBook = 23,
+    TrashTuna = 24,
+    TrashSoap = 25,
+    TrashToothpaste = 26,
+    TrashContainerYellow = 27,
+    TrashContainerGrey = 28,
+    TrashContainerGreen = 29,
+    TruckRear = 30,
+    TruckMid = 31,
+    TruckFront = 32
+}
