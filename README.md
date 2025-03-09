@@ -72,3 +72,10 @@ Eine Entity besteht immer aus 3 Zahlen, die ihre ID und Position im Level beschr
 
 ## Bug-Reports und Feedback
 Ihr seid immer willkommen, ein Github-Issue aufzumachen, dem Repo beizutragen oder mir eine Nachricht zu schreiben.
+
+## Spenden
+Ich bin nicht auf Spenden angewiesen.
+
+Wenn Ihr mir aber einen Kaffee spendieren wollt oder einfach Danke sagen wollt, weil Ich Euch mit dem Projekt einen Riesen Freudensprung verschafft habe, dann gibt es die Möglichkeit per Paypal.
+
+[![Donate with PayPal](https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png)](https://www.paypal.com/donate/?hosted_button_id=KXCQNP73NNN3E)
