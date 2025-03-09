@@ -24,6 +24,8 @@ Denkt dran, von den Orginalen Leveln eine Backup-Kopie zu machen. Wenn sie mal �
 Beispiel-Level findet ihr im Ordner ![Beispiele](https://github.com/etothepii4/Fessie-Level-Converter/tree/main/Beispiele)
 
 ## Anleitung: Level Bearbeiten mit dem Tiled Editor 1.11.2.
+Youtube-Video: https://youtu.be/mmDzscMKgWk
+
 ![Beispiel-Level in Tiled](./Example-Level.png)
 
 1. Installiert den Tiled Editor 1.11.2 und öffnet ein konvertiertes Level Eurer Wahl (`.tmx`).
@@ -33,6 +35,8 @@ Fessie sollte nur einmal vorkommen. Braune Müllcontainer wechseln im Spiel ihre
 4. Abspeichern, wieder durch den Converter jagen (`.tmx` -> `.dat`) und als Level für das Fessie-Spiel hinterlegen.
 
 ## Anleitung: Selbst ein Level erstellen mit dem Tiled Editor 1.11.2.
+Youtube-Video: https://www.youtube.com/watch?v=5-w95XJGrXw
+
 ![Beispiel-Ansicht von FLC](./new-map.png)
 
 Die Karte muss ein spezifisches Format haben, der Converter kommt nur mit ein paar Annahmen zurecht. Am Besten ihr richtet Euch nach den Beispiel-Leveln in diesem Repo.
