@@ -202,8 +202,17 @@ public static class TmxParser
         return newData;
     }
 
-    private static string GetFilepathOrFolderWithRelativeFilepath(string path, string directoryInstead) =>
-        Path.IsPathRooted(path) ? path : (Path.Join(directoryInstead, path));
+    private static string GetFilepathOrFolderWithRelativeFilepath(string path, string directoryInstead) {
+        if (Path.IsPathRooted(path))
+        {
+            return path;
+        }
+
+        var combined = Path.Combine(Path.GetDirectoryName(directoryInstead) ?? "", path);
+        var qualifiedPath = Path.GetFullPath(combined);
+        return qualifiedPath;
+    }
+        
 
     public static FessieLevel? ParseLevel(string inputFilepath)
     {
@@ -244,11 +253,11 @@ public static class TmxParser
         }
         
         // load external tilesets. and merge them into one big one. Embedded ones have no source and are not supported.
-        var compatibleTilesetReferences = map.Elements("tileset").Where(ts => 
+        var compatibleTilesetReferences = map.Elements("tileset").Where(ts =>
             ts.Attribute("source") is not null
-            && Path.Exists(GetFilepathOrFolderWithRelativeFilepath(ts.Attribute("source")!.Value, inputFilepath))
-        );
+            && Path.Exists(GetFilepathOrFolderWithRelativeFilepath(ts.Attribute("source")!.Value, inputFilepath)));
         var mergedGlobalTileMapping = new Dictionary<string, Tile>();
+        Console.WriteLine("how many compatbible tileset refs do i have? {0}", compatibleTilesetReferences.Count());
         if (compatibleTilesetReferences.Count() == 0)
         {
             MessageBox.Show($"Level {inputFilepath} hat keine kompatiblen Tileset-Referenzen. Entweder weil die Tilesets nicht extern sind oder weil sie nicht am richtigen Pfad hinterlegt sind. Parsing des Levels wird übersprungen.",
